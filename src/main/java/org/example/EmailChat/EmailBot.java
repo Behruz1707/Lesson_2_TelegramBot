@@ -27,7 +27,6 @@ public class EmailBot extends TelegramLongPollingBot {
             if(message.hasText()){
                 final String text=message.getText();
                 if(text.equalsIgnoreCase("/start")){
-                    final String text1=message.getText();
                     SendMessage sendMessage=new SendMessage(message.getChatId().toString(),"Hello "+message.getFrom().getFirstName()+
                             " enter email:");
                     Management.USER_STEPS.put(message.getChatId(),Step.MY_EMAIL);
