@@ -28,5 +28,6 @@ public class EmailManager {
         massage.setText(information.getMassage());
         Transport.send(massage);
 
+
     }
 }
